@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap');
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: #000;
+}
+/* ------------------ */
+
+	/*
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	*/
+	/* padding: 20px 10px 30px 50px;*/
+
+	/* Для всех сторон 30 */
+	/* padding:  30px; */
+
+	/* Сверху\снизу 50. слева\справа 30 */
+	/* padding: 50px 30px; */
+
+	/* Сверху 50, слева\справа 30, снизу 10 */
+	/* padding: 50px 30px 10px; */
+
+	/*
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	*/
+	/* margin: 20px 10px 30px 50px;*/
+
+	/* Для всех сторон 30 */
+	/* margin: 30px; */
+
+	/* Сверху\снизу 50. слева\справа 30 */
+	/* margin: 50px 30px; */
+
+	/* Сверху 50, слева\справа 30, снизу 10 */
+	/* margin: 50px 30px 10px; */
+
+	/* Больше можна, меньше нет */
+	/*
+	min-width: 500px;
+	min-height: 100px;
+	*/
+	/* Меньше можна, больше нет */
+	/*
+	max-width: 500px;
+	max-height: 100px;
+	*/
+
+
+
+/*
+box-sizing
+Применяется для изменения алгоритма расчета ширины и высоты элемента. 
+Свойство наследуется.
+content-box - Основывается на стандартах CSS, при этом свойства width и height задают ширину и высоту контента и не включают в себя значения отступов, полей и границ.
+border-box - Свойства width и height включают в себя значения полей и границ, но не отступов (margin). Эта модель используется браузером Internet Exporer в режиме несовместимости.
+padding-box - Свойства width и height включают в себя значения полей, но не отступов (margin) и границ (border). 
+*/
+
+/*
+width
+Устанавливает ширину блочных тегов и некоторыйх строчных (например img)
+Свойство не наследуется.
+width:100px;
+width:10%;
+*/
+
+/*
+height:
+Устанавливает высоту блочных тегов и некоторыйх строчных (например img)
+Свойство не наследуется.
+height:100px;
+height:10%;
+*/
+
+/*
+max-width
+Устанавливает максимальную ширину блочных тегов 
+и некоторыйх строчных (например img)
+
+min-width
+Устанавливает минимальную ширину 
+блочных тегов и некоторыйх строчных (например img)
+
+max-height
+Свойство не наследуется.
+
+min-height
+Свойство не наследуется.
+
+overflow 
+Управляет отображением содержания блочного элемента
+visible - Отображается все содержание элемента, даже за пределами установленной высоты и ширины. 
+hidden - Отображается только область внутри элемента, остальное будет скрыто.
+scroll - Всегда добавляются полосы прокрутки.
+auto - Полосы прокрутки добавляются только при необходимости.
+
+display:
+Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+Свойство не наследуется.
+
+block - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>, заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого. 											
+inline - Элемент отображается как встроенный. Использование блочных тегов, таких как <div> и <p>, автоматически создает перенос и показывает содержимое этих тегов с новой строки. Значение inline отменяет эту особенность, поэтому содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. 											
+inline - block - Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега <img>). При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный. 											
+none - Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. 
+*/
+body {
+	font-family: font-family: 'Lato', sans-serif;
+}
+div.main__block {
+	margin: 61px 0px 0px 165px;
+	width: 1275px;
+	
+
+
+}
+.header {
+	margin-bottom: 74px;
+}
+.header__menu {
+
+	
+}
+.logo {
+
+}
+.menu__link {
+	color: #222831;
+	font-weight: 700;
+   line-height: 28px;
+	text-align: left;
+	}
+	.menu__link 
+li  {
+	display: inline-block;
+}
+
+
+li > a {
+	font-family: 'Lato', sans-serif;
+	color: #222831;
+	font-weight: 700;
+   line-height: 28px;
+
+
+}
+a > span {
+	padding: 12px 24px;
+}
+.orange {
+	color: #FF5722;
+	margin: 0px 0px 0px 41px;
+}
+.button {
+	background: #FF5722;
+	box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+	color: white;
+
+}
+.link {
+	margin: 0px 0px 0px 40px;
+	
+}
+.logo {
+	margin: 0px 155px 0px 0px;
+	
+}
+p {
+	display: inline-block;
+}
+.img-1 {
+	padding-top: 17px;
+	
+}
+.block p , .block-11 p {
+	font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+	margin: 0px 0px 31px 0px;
+}
+.title {
+	display: inline-block;
+	font-family: Lora;
+   font-weight: bold;
+   font-size: 52px;
+   line-height: 67px;
+   width: 667px;
+   height: 201px;
+	text-align: left;
+	color: #10375C;
+	
+}
+.title__span {
+	color: #DD2C00;
+}
+.paragraph-1 {
+	display: inline-block;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+	width: 382px;
+	margin: 0px 0px 0px 80px;
+	color: #6A6A6A;
+	
+	
+	
+	
+}
+.block-1 {
+	text-align: left;
+	
+}
+
+.block-2 {
+	text-align: right;
+	margin: 0px 0px 112px 0px;
+}
+.subtitle {
+	display: inline-block;
+   font-family: Lora;
+   font-size: 40px;
+   font-weight: 700;
+	line-height: 51px;
+	color: #10375C;
+	padding-bottom: 15px;
+	
+	
+}
+.paragraph-2 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #6A6A6A;
+	width: 452px;
+	margin-left: 161px;
+	text-align: left;
+}
+.arrow__left {
+	padding-top: 20px;
+	margin: 0px 0px 0px 120px;
+}
+.arrow__right {
+	padding-top: 20px;
+	margin: 0px 0px 0px 20px;
+}
+.icons__block , .icons__block-1 , .icons__block-2 {
+	margin: 0px 0px 76px 0px;
+}
+.icons__block .block-5 , .icons__block-1 .block-7 , .icons__block-2 .block-9{
+	display: inline-block;
+	font-family: Lora;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 41px;
+	color: #10375C;
+	}
+.icons__block .block-6 , .icons__block-1 .block-8 , .icons__block-2 .block-10{
+	display: inline-block;
+	margin: 0px 0px 0px 150px;
+	font-family: Lora;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 41px;
+	color: #10375C;
+	}
+	.icons__block-1 .block-8 {
+		margin: 0px 0px 0px 190px;
+	}
+
+/* .block-5 {
+	display: inline-block;
+	font-family: Lora;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 41px;
+	color: #10375C;
+} */
+.icons__block .text__1 , .text__2 {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px;
+}
+.icons__block-1 .text__3 , .text__4 {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px;
+}
+.icons__block-2 .text__5 , .text__6 {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px;
+}
+
+.icon__1 {
+	width: 32px;
+	height: 32px;
+}
+/* span .text__1 {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px;
+} */
+
+/* 
+.block-6 {
+	margin: 0px 0px 0px 150px; */
+	
+/* span .text__2 {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px;
+}  */
+.icons__block-1 {
+}
+/* .block-7 {
+	display: inline-block;
+	font-family: Lora;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 41px;
+	color: #10375C;
+} */
+span.text__3 {
+	/* font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px; */
+}
+.block-8 {
+	/* display: inline-block;
+	margin: 0px 0px 0px 150px;
+	font-family: Lora;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 41px;
+	color: #10375C; */
+	
+}
+span.text__4 {
+	/* font-family: Lato;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #9A9A9A;
+	margin: 0px 0px 0px 40px; */
+}
+.block-13 {
+	display: inline-block;
+}
+.block-13-2 {
+	display: inline-block;
+	margin: 0px 0px 0px 80px;
+}
+.block-13 li {
+	margin: 0px 0px 53px 0px;
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0em;
+}
+.list__span {
+	padding: 24px 183px 24px 24px;
+	background-color: #FF5722;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: white;
+}
+.foto-3 {
+	display: list-item;
+} 
+.main__block-13 {
+	margin: 0px 0px 100px 0px;
+}
+.subtitle-1 {
+	font-family: Lora;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 51px;
+	text-align: center;
+	color: #10375C;
+	margin: 0px 0px 20px 0px;
+}
+.subtitle-1 + p {
+	display: block;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #9A9A9A;
+	margin: 0px 0px 50px 0px;
+}
+.link__menu {
+	text-align: center;
+	margin: 0px 0px 0px 50px;
+}
+
+
+
+
+
